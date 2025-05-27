@@ -1,5 +1,3 @@
-
-
 <div class="page-header custom-header">
     <h3>{{translate 'Create User' category='labels' scope='User'}}</h3>
 </div>
@@ -35,17 +33,18 @@
                 {{/if}}
             </div>
             <div class="button-container">
-                {{#each buttonList}}
-                    <button class="btn btn-{{style}}" data-action="{{name}}">{{translate label scope=../scope}}</button>
-                {{/each}}
+                <button class="btn btn-primary" data-action="save">Lưu</button>
+                <button class="btn btn-default" data-action="cancel">Hủy</button>
+                <button class="btn btn-default" data-action="sua">Sửa</button>
+                
                 {{#if dropdownItemList.length}}
                     <div class="btn-group">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            {{translate 'Actions'}} <span class="caret"></span>
+                            Thao tác <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                             {{#each dropdownItemList}}
-                                <li><a href="javascript:" data-action="{{name}}">{{translate label scope=../scope}}</a></li>
+                                <li><a href="javascript:" data-action="{{name}}">{{label}}</a></li>
                             {{/each}}
                         </ul>
                     </div>
