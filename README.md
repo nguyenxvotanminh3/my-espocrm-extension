@@ -200,7 +200,7 @@ Run composer install for the site:
 Command to run unit tests:
 
 ```
-(node build --copy; node build --composer-install; cd site; vendor/bin/phpunit tests/unit/Espo/Modules/{@name})
+(node build --copy; node build --composer-install; cd site; vendor/bin/phpunit tests/unit/Espo/Modules/Payment_management)
 ```
 
 or
@@ -236,7 +236,7 @@ return [
 Command to run integration tests:
 
 ```
-(node build --copy; node build --composer-install; cd site; vendor/bin/phpunit tests/integration/Espo/Modules/{@name})
+(node build --copy; node build --composer-install; cd site; vendor/bin/phpunit tests/integration/Espo/Modules/Payment_management)
 ```
 
 or
@@ -261,7 +261,7 @@ or
 npm run sa
 ```
 
-If your extension contains additional PHP packages, you also need to add `site/custom/Espo/Modules/{@name}/vendor` to the *scanDirectories* section in *phpstan.neon* config.
+If your extension contains additional PHP packages, you also need to add `site/custom/Espo/Modules/Payment_management/vendor` to the *scanDirectories* section in *phpstan.neon* config.
 
 Note: You can omit *composer-install* command if your extension does not contain PHP packages.
 
@@ -273,8 +273,8 @@ You need to set the following paths to be ignored in your IDE:
 * `site/build`
 * `site/custom/`
 * `site/client/custom/`
-* `site/tests/unit/Espo/Modules/{@name}`
-* `site/tests/integration/Espo/Modules/{@name}`
+* `site/tests/unit/Espo/Modules/Payment_management`
+* `site/tests/integration/Espo/Modules/Payment_management`
 
 ### File watcher
 
@@ -295,13 +295,13 @@ The initialization script asks whether you want to use ES6 modules. It's recomme
 If you want to switch to ES6 later:
 
 1. Set *bundled* to true in `extension.json`.
-2. Set *bundled* and *jsTranspiled* to true in `src/files/custom/Espo/Modules/{@name}/Resources/module.json`.
-3. Add `src/files/custom/Espo/Modules/{@name}/Resources/metadata/app/client.json`
+2. Set *bundled* and *jsTranspiled* to true in `src/files/custom/Espo/Modules/Payment_management/Resources/module.json`.
+3. Add `src/files/custom/Espo/Modules/Payment_management/Resources/metadata/app/client.json`
     ```json
     {
         "scriptList": [
             "__APPEND__",
-            "client/custom/modules/{@nameHyphen}/lib/init.js"
+            "client/custom/modules/payment_management/lib/init.js"
         ]
     }
     ```
@@ -320,12 +320,12 @@ In `extension.json`, add a command that will bundle the needed library into an A
 }
 ```
 
-Add the library module path to `src/files/custom/Espo/Modules/{@name}/Resources/metadata/app/jsLibs.json`
+Add the library module path to `src/files/custom/Espo/Modules/Payment_management/Resources/metadata/app/jsLibs.json`
 
 ```json
 {
     "some-lib": {
-        "path": "client/custom/modules/{@nameHyphen}/lib/some-lib.js"
+        "path": "client/custom/modules/payment_management/lib/some-lib.js"
     }
 }
 ```

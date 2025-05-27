@@ -1,18 +1,14 @@
 <?php
-
 class AfterInstall
 {
-    protected $container;
-
     public function run($container)
     {
-        $this->container = $container;
-    }
-
-    protected function clearCache()
-    {
-        try {
-            $this->container->get('dataManager')->clearCache();
-        } catch (\Exception $e) {}
+        $config = $container->get('config');
+        $tabList = $config->get('tabList');
+        if (!in_array('HelloWorld', $tabList)) {
+            $tabList[] = 'HelloWorld';
+            $config->set('tabList', $tabList);
+        }
+        $config->save();
     }
 }

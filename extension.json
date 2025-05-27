@@ -1,9 +1,9 @@
 {
-    "module": "{@name}",
-    "name": "{@nameLabel}",
-    "description": "{@description}",
-    "author": "{@author}",
-    "bundled": {@bundled},
+    "module": "Payment_management",
+    "name": "Payment_management",
+    "description": "Payment, User, kienlong.",
+    "author": "Nguyen Minh",
+    "bundled": false,
     "acceptableVersions": [
         ">=7.3.0"
     ],
