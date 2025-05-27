@@ -1,0 +1,5 @@
+{
+    "views": {
+        "edit": "payment_management:views/user/edit"
+    }
+} 
