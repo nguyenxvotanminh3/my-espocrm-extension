@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "file": "File",
+        "request": "Request"
+    },
+    "links": {
+        "request": "Request"
+    },
+    "labels": {
+        "Create CRequestAttachment": "Create Request attachment"
+    }
+}

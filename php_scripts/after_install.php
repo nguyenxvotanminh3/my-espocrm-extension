@@ -7,6 +7,6 @@ $app->setupSystemUser();
 
 if (file_exists('../src/scripts/AfterInstall.php')) {
     include('../src/scripts/AfterInstall.php');
-    $afterInstall = new AfterInstall();
+    $afterInstall = new AfterInstallScript();
     $afterInstall->run($app->getContainer());
 }

@@ -1,0 +1,24 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "region"
+                }
+            ],
+            [
+                {
+                    "name": "code"
+                },
+                {
+                    "name": "managerBranch"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

@@ -1,8 +1,0 @@
-{
-    "hello/world": {
-        "params": {
-            "view": "payment_management:views/hello/hello-world"
-        },
-        "order": 1
-    }
-} 

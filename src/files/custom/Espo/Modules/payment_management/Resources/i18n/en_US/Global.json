@@ -1,0 +1,14 @@
+{
+    "scopeNames": {
+        "CBranch": "Branch",
+        "CRequestCostItem": "RequestCostItem",
+        "CRequest": "Request",
+        "CRequestAttachment": "Request attachment"
+    },
+    "scopeNamesPlural": {
+        "CBranch": "Branchs",
+        "CRequestCostItem": "RequestCostItems",
+        "CRequest": "Requests",
+        "CRequestAttachment": "Request attachments"
+    }
+}

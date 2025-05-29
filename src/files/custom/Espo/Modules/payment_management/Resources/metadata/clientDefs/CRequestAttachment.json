@@ -1,6 +1,10 @@
 {
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
     "relationshipPanels": {
-        "branch": {
+        "request": {
             "layout": null,
             "selectPrimaryFilterName": null
         }

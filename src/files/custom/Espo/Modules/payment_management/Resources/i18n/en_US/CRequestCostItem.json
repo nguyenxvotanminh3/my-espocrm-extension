@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "code": "Code",
+        "isUniquePerRequest": "IsUniquePerRequest",
+        "requests": "Requests"
+    },
+    "labels": {
+        "Create CRequestCostItem": "Create RequestCostItem"
+    },
+    "links": {
+        "requests": "Requests"
+    }
+}
