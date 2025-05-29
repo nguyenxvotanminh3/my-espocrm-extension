@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "requestId": "RequestId",
+        "branch": "Branch",
+        "region": "Region",
+        "priority": "Priority",
+        "paymentPeriod": "PaymentPeriod",
+        "proposalType": "ProposalType",
+        "amount": "Amount",
+        "amountCurrency": "Amount (Currency)",
+        "amountConverted": "Amount (Converted)",
+        "requestAttachments": "Request Attachments",
+        "requestCostItems": "Request Cost Items"
+    },
+    "labels": {
+        "Create CRequest": "Create Request"
+    },
+    "links": {
+        "branch": "Branch",
+        "requestAttachments": "Request Attachments",
+        "requestCostItems": "Request Cost Items"
+    },
+    "options": {
+        "priority": {
+            "Thường": "Thường",
+            "Ưu tiên": "Ưu tiên"
+        },
+        "paymentPeriod": {
+            "Tháng 1": "Tháng 1",
+            "Tháng 2": "Tháng 2",
+            "Tháng 3": "Tháng 3",
+            "Tháng 4": "Tháng 4",
+            "Tháng 5": "Tháng 5",
+            "Tháng 6": "Tháng 6",
+            "Tháng 7": "Tháng 7",
+            "Tháng 8": "Tháng 8",
+            "Tháng 9": "Tháng 9",
+            "Tháng 10": "Tháng 10",
+            "Tháng 111": "Tháng 11",
+            "Tháng 12": "Tháng 12"
+        },
+        "proposalType": {
+            "Tạm ứng": "Tạm ứng",
+            "Thanh Toán": "Thanh toán"
+        }
+    }
+}

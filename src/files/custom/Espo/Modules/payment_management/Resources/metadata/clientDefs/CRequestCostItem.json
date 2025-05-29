@@ -1,0 +1,13 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-trowel",
+    "relationshipPanels": {
+        "requests": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

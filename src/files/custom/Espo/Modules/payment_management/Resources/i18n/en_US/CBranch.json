@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "code": "Code",
+        "region": "Region",
+        "managerBranch": "ManagerBranch",
+        "users": "Users",
+        "requests": "Requests"
+    },
+    "links": {
+        "users": "Users",
+        "requests": "Requests"
+    },
+    "labels": {
+        "Create CBranch": "Create Branch"
+    }
+}

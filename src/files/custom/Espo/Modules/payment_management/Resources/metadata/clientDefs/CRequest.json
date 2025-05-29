@@ -1,0 +1,21 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-angles-right",
+    "relationshipPanels": {
+        "branch": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "requestAttachments": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "requestCostItems": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}
